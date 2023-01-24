@@ -1,91 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Butaca</title>
     <link rel="shortcut icon" href="./img/Butaca.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CDN BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header style="background-color:rgb(240, 240, 139)">
-        <nav>
-                <img class="logo"src="./img/Butaca.png" alt="Logo">
-            <ul class="navegacion">
-                <li>
-                    <a href="./Index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/contactanos.html">Contactanos</a>  
-                </li>
-                <li>
-                    <a href="./pages/historia.html">Historia</a>
-                </li>
-                <li>
-                    <a href="./pages/estrenos.html">Estrenos</a>
-                </li>
-                <li>
-                    <a href="./pages/galeria.html">Galeria</a>
-                </li>
-            </ul>
-            
+    <header style="background-color:rgb(243, 246, 246)">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <a class="navbar-brand" href="./Index.html">
+                    <img class="logo" src="./img/Butaca.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/estrenos.html">Estrenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
         </nav>
     </header>
-</body>
 
-<main>
-    <h2>Criticas de Peliculas y Series</h2>
+    <main>
+        <h2>Criticas de Peliculas y Series</h2>
 
-    <ul>
-        <li>Series</li>
         <ul>
-            <li>1899</li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem modi qui iusto architecto laboriosam, corporis beatae fugiat minus ex.</p>
-            <li>The Sinner</li>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odio eaque sequi, quo blanditiis vitae illo quam neque, labore accusantium est non maiores eveniet perspiciatis corporis repudiandae iure commodi impedit?</p>
-            <li>Narcos</li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perspiciatis, pariatur alias tempore deleniti inventore, quas deserunt maiores at dolore obcaecati ipsam minus minima dolor repellendus sed. Sapiente, excepturi corporis.</p>
-            <li>Merlina</li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quidem suscipit sapiente est dignissimos modi, vitae tempore. Dolorem aliquid, blanditiis iste repellendus voluptas, nisi, quibusdam id aut corrupti quae quia.</p>
-            <li>Matilda</li>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem illum fuga id iste cum consectetur animi numquam molestias quod, culpa libero magni obcaecati nemo excepturi aliquam et. Autem, recusandae dolorum.</p>
-            <li>Dahmer</li>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est pariatur sunt nisi molestias vel tempora, officia vero sit incidunt, mollitia sapiente praesentium. Ut explicabo odit delectus dolore? Nobis, dolore ab.</p>
-            <li>Stranger Things</li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore, dignissimos dolor natus repellat perspiciatis soluta molestiae odio, ratione, doloremque adipisci ut? Vero fugit veniam inventore ratione expedita unde perferendis?</p>
+            <li>Series</li>
+            <ul>
+                <li>1899</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem modi qui iusto
+                    architecto laboriosam, corporis beatae fugiat minus ex.</p>
+                <li>The Sinner</li>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odio eaque sequi, quo blanditiis
+                    vitae illo quam neque, labore accusantium est non maiores eveniet perspiciatis corporis repudiandae
+                    iure commodi impedit?</p>
+                <li>Narcos</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perspiciatis, pariatur alias tempore
+                    deleniti inventore, quas deserunt maiores at dolore obcaecati ipsam minus minima dolor repellendus
+                    sed. Sapiente, excepturi corporis.</p>
+                <li>Merlina</li>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quidem suscipit sapiente est
+                    dignissimos modi, vitae tempore. Dolorem aliquid, blanditiis iste repellendus voluptas, nisi,
+                    quibusdam id aut corrupti quae quia.</p>
+                <li>Matilda</li>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem illum fuga id iste cum consectetur
+                    animi numquam molestias quod, culpa libero magni obcaecati nemo excepturi aliquam et. Autem,
+                    recusandae dolorum.</p>
+                <li>Dahmer</li>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est pariatur sunt nisi molestias vel
+                    tempora, officia vero sit incidunt, mollitia sapiente praesentium. Ut explicabo odit delectus
+                    dolore? Nobis, dolore ab.</p>
+                <li>Stranger Things</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore, dignissimos dolor natus repellat
+                    perspiciatis soluta molestiae odio, ratione, doloremque adipisci ut? Vero fugit veniam inventore
+                    ratione expedita unde perferendis?</p>
+            </ul>
         </ul>
-    </ul>
 
 
-    <h3>Peliculas</h3>
-    <ul>
-        <li>Glass Onion</li>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos autem odit officiis expedita unde, consectetur impedit id amet temporibus molestiae quia praesentium ea ipsam veritatis at ipsa. Ea, consectetur odit?</p>
-        <li>Matrimillas</li>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, odit quae iure ducimus eos dignissimos veniam, natus voluptatum harum obcaecati fuga accusantium aut, in reprehenderit incidunt cupiditate. Error, esse voluptas?</p>
-        <li>El Angel de la Muerte</li>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero itaque incidunt, laudantium enim saepe sed sapiente, maiores tempore fugiat iste quaerat molestiae assumenda, minima voluptatum soluta eos magnam suscipit laborum.</p>
-    </ul>
-</main>
+        <h3>Peliculas</h3>
+        <ul>
+            <li>Glass Onion</li>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos autem odit officiis expedita unde,
+                consectetur impedit id amet temporibus molestiae quia praesentium ea ipsam veritatis at ipsa. Ea,
+                consectetur odit?</p>
+            <li>Matrimillas</li>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, odit quae iure ducimus eos dignissimos
+                veniam, natus voluptatum harum obcaecati fuga accusantium aut, in reprehenderit incidunt cupiditate.
+                Error, esse voluptas?</p>
+            <li>El Angel de la Muerte</li>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero itaque incidunt, laudantium enim saepe
+                sed sapiente, maiores tempore fugiat iste quaerat molestiae assumenda, minima voluptatum soluta eos
+                magnam suscipit laborum.</p>
+        </ul>
+    </main>
 
-<footer>
-    <section>
-        <div class="redes sociales">
-            <h4>CONTACTO</h4>
-            <p> Calle Francia N° 222, Chivilcoy, Buenos Aires </p>
-            <p>Teléfono 011 15-21687802 </p>
-            <a>
-            <i class="fa-brands fa-whatsapp fa-5x"></i>
-            </a>
-            <a>
-            <i class="fa-brands fa-instagram fa-5x"></i>
-            </a>
-            <a>
-            <i class="fa-brands fa-facebook fa-5x"></i>
-            </a>
-        </div>
-    </section>
-</footer>
+    <footer>
+        <section>
+            <div class="redes sociales">
+                <h4>CONTACTO</h4>
+                <p> Calle Francia N° 222, Chivilcoy, Buenos Aires </p>
+                <p>Teléfono 011 15-21687802 </p>
+                <a>
+                    <i class="fa-brands fa-whatsapp fa-5x"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-instagram fa-5x"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-facebook fa-5x"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <!--CDN BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
