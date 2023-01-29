@@ -20,14 +20,17 @@
 </head>
 
 <body>
-    <header style="background-color:rgb(243, 246, 246)">
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="./Index.html">
                     <img class="logo" src="./img/Butaca.png" alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./pages/estrenos.html">Estrenos</a>
@@ -42,42 +45,62 @@
                             <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
                         </li>
                     </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Glass.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Merlina.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/1899.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main class="inicio">
         <h2>Criticas de Peliculas y Series</h2>
 
         <ul>
             <li>Series</li>
             <ul>
                 <li>1899</li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem exercitationem modi qui iusto
-                    architecto laboriosam, corporis beatae fugiat minus ex.</p>
+                <p>La sinopsis oficial de 1899 redacta que, cuando un barco de vapor va de Europa a Estados Unidos, recibe un misterioso mensaje sobre el paradero de otro barco de la misma naviera que llevaba 4 meses desaparecido. La misión de rescate comienza a tomar tintes de suspenso cuando vemos a los pasajeros, que huyen de sus enigmáticos pasados, revivir las experiencias que buscaban dejar atrás. </p>
                 <li>The Sinner</li>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam odio eaque sequi, quo blanditiis
-                    vitae illo quam neque, labore accusantium est non maiores eveniet perspiciatis corporis repudiandae
-                    iure commodi impedit?</p>
+                <p>En su primera temporada, la serie sigue los eventos ocurridos después de que una joven madre asesinase a un hombre en público y a plena luz del día, sin tener un motivo aparente. El detective Harry Ambrose es el encargado de investigar a fondo para tratar de revelar este misterioso asesinato.
+                    En la segunda temporada, Ambrose regresa a su ciudad natal, después de que un niño de 13 años confesara haber envenenado a sus padres, enterándose de los secretos que los habitantes de la ciudad están decididos a mantener enterrados.
+                    En la tercera temporada, lo que parecía una investigación rutinaria sobre un trágico accidente de coche en las afueras de Dorchester, situado en el estado de Nueva York, no tardará en dar un giro radical para convertirse en uno de los casos más peligrosos y perturbadores de la carrera de Ambrose.
+                    En la cuarta y última temporada, un Ambrose ya retirado viaja a Maine para disfrutar del verano, pero el suicidio de una joven (de la que él es testigo) genera que investigue y saque a la luz una trágica historia que involucra a una de las familias más prominentes del estado.</p>
                 <li>Narcos</li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perspiciatis, pariatur alias tempore
-                    deleniti inventore, quas deserunt maiores at dolore obcaecati ipsam minus minima dolor repellendus
-                    sed. Sapiente, excepturi corporis.</p>
+                <p>Basada en el surgimiento del tráfico de cocaína desde Colombia durante los años ochenta. La historia comienza con Mateo Moreno alias Cucaracha, un fabricante de cocaína quien durante la dictadura de Pinochet sale de Chile. Cucaracha buscando un socio se reúne con el personaje principal de la serie, Pablo Emilio Escobar Gaviria, quien en el principio de la historia es un reconocido traficante de mercancías en el departamento colombiano de Antioquia. Él junto a su primo Gustavo Gaviria han logrado una reputación dentro de la ciudad de Medellín. Con este nuevo producto en sus manos comienzan a crear una enorme riqueza, también se ven asociados a los principales traficantes de otras mercancías de Colombia. La historia también toca pasajes de como se produce y se comercializa la droga hacia Estados Unidos usando uno de los principales contactos Carlos Lehder.
+                    La historia se cuenta en muchos instantes desde la perspectiva del agente de la DEA Steve Murphy, norteamericano enviado a Colombia a investigar el tráfico de cocaína con el objetivo de colaborar en el arresto de los actores principales del tráfico. Es relevante su participación, así como la del agente Javier Peña, pero sin duda la historia siendo estadounidense pone en primer plano a estos dos agentes, y deja en segundo plano al Bloque de Búsqueda. Narcos es una serie de corte policiaco, que reconstruye una época, pues muestra pasajes sociales y políticos colombianos (y en parte norteamericanos), así como automóviles, vestuarios, etc. Sobre la base de su ambientación en general describe de manera cercana y biográficamente a Pablo Emilio Escobar Gaviria. Toca facetas familiares y personales, así como sus excesos. No es una serie típicamente cruda y violenta como la vida del capo. Está narrada en inglés pero en su mayor parte los diálogos son en español, con típico acento colombiano.3​ La serie fue filmada en locación en Colombia en el segundo semestre de 2014, y consta de diez episodios estrenados en su totalidad el 28 de agosto de 2015.4​
+                    La cuarta temporada de la serie estará ambientada en México y protagonizada por Diego Luna y Michael Peña. Se esperaba su estreno para el verano de 20185​ pero finalmente se estrenará el 16 de noviembre de ese mismo año.</p>
                 <li>Merlina</li>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quidem suscipit sapiente est
-                    dignissimos modi, vitae tempore. Dolorem aliquid, blanditiis iste repellendus voluptas, nisi,
-                    quibusdam id aut corrupti quae quia.</p>
+                <p>La serie es una comedia de misterio que se centra en Wednesday Addams, también llamada ''Miércoles'' o ''Merlina'' en español, y su vida como estudiante en la Academia Nevermore, una escuela para jóvenes marginados.
+                    Allí, la joven intentará dominar sus poderes psíquicos, frenar una ola de asesinatos que se han llevado a cabo en la ciudad y resolver el misterio sobrenatural que afectó a su familia. Además, Merlina conocerá nuevos amigos y aprenderá a navegar por distintas relaciones.</p>
                 <li>Matilda</li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem illum fuga id iste cum consectetur
-                    animi numquam molestias quod, culpa libero magni obcaecati nemo excepturi aliquam et. Autem,
-                    recusandae dolorum.</p>
+                <p>Matilda, una niña fuera de lo común que tiene gran astucia e imaginación, se lanza a cambiar su propia historia, y los resultados son milagrosos.</p>
                 <li>Dahmer</li>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est pariatur sunt nisi molestias vel
-                    tempora, officia vero sit incidunt, mollitia sapiente praesentium. Ut explicabo odit delectus
-                    dolore? Nobis, dolore ab.</p>
+                <p>Es una miniserie sobre el asesino en serie Jeffrey Dahmer acusado de acabar con la vida de más de una decena de individuos, incluidos varios niños, en Milwaukee y Ohio, entre 1978 y 1991.
+                    La ficción narra la complicada infancia y adolescencia de Jeffrey Dahmer. Con una madre drogadicta y un padre ausente debido a sus constantes viajes de trabajo, el pequeño Dahmer vivía en un hogar donde el afecto brillaba por su ausencia. El interés de Jeffrey por los cuerpos sin vida se inicia en su adolescencia cuando su padre le enseña a diseccionar animales muertos. Una extraña afición que le llevó a la consulta de un psicólogo, que le diagnosticó necrofilia.
+                    Estos antecedentes le llevan a cometer su primer asesinato en 1978, con solo 18 años. Su falta de experiencia casi le delata ante la policía, pero los agentes no vieron nada sospechoso en él y lo dejaron marchar. Dahmer no vuelve a asesinar hasta 1987; y desde entonces, y a lo largo de los siguientes cuatro años, se cree que mató a 16 personas. El despiadado asesino en serie estuvo a punto de ser descubierto en varias ocasiones, debido a las denuncias de una de sus vecinas, que aseguraba que salía un olor nauseabundo de su casa.</p>
                 <li>Stranger Things</li>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore, dignissimos dolor natus repellat
-                    perspiciatis soluta molestiae odio, ratione, doloremque adipisci ut? Vero fugit veniam inventore
-                    ratione expedita unde perferendis?</p>
+                <p>Es una serie de televisión dramática de misterio que está ambientada en una localidad de Indiana. Dicho lugar adquiere fama por los extraños acontecimientos que están sucediendo, similares a los del 'Proyecto Montauk', un supuesto proyecto secreto llevado a cabo por el gobierno de los Estados Unidos en el que se realizaban experimentos con la finalidad de desarrollar técnicas de guerra psicológica.
+                    La historia narra la súbita desaparición de un niño en esta ciudad durante la década de los 80, hecho que destapa los extraños sucesos que tienen lugar en la zona, producto de una serie de experimentos que realiza el gobierno. Además, en la ciudad aparecen fuerzas sobrenaturales inquietantes y una niña muy perturbadora.</p>
             </ul>
         </ul>
 
@@ -85,23 +108,17 @@
         <h3>Peliculas</h3>
         <ul>
             <li>Glass Onion</li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos autem odit officiis expedita unde,
-                consectetur impedit id amet temporibus molestiae quia praesentium ea ipsam veritatis at ipsa. Ea,
-                consectetur odit?</p>
+            <p>Cuando el multimillonario Miles Bron (Edward Norton) invita a algunos de sus allegados a una escapada a su isla griega privada, pronto queda claro que no todo es perfecto en el paraíso. Y cuando alguien aparece muerto, ¿quién mejor que Benoit Blanc para desentrañar todas las capas del misterio?</p>
             <li>Matrimillas</li>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, odit quae iure ducimus eos dignissimos
-                veniam, natus voluptatum harum obcaecati fuga accusantium aut, in reprehenderit incidunt cupiditate.
-                Error, esse voluptas?</p>
+            <p>Una pareja en crisis cree encontrar la solución en una app que valora sus gestos hacia el otro sumando o restando millas como hacen las compañía aéreas. Sin embargo, lo que parecía el fin de sus problemas se convierte en el auténtico principio.</p>
             <li>El Angel de la Muerte</li>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero itaque incidunt, laudantium enim saepe
-                sed sapiente, maiores tempore fugiat iste quaerat molestiae assumenda, minima voluptatum soluta eos
-                magnam suscipit laborum.</p>
+            <p>Charlie Cullen es un enfermero considerado uno de los asesinos en serie más prolíficos de la historia. Bajo el apodo "Ángel de la Muerte", Cullen era un padre y marido que se ganaba la vida como cuidador. Su secreta afición de arrebatar vidas le llevó a estar implicado en la muerte de hasta 300 personas, repartidas entre nueve hospitales de las ciudades de Nueva Jersey y Pensilvania a lo largo de 16 años.</p>
         </ul>
     </main>
 
     <footer>
         <section>
-            <div class="redes sociales">
+            <div class="redessociales">
                 <h4>CONTACTO</h4>
                 <p> Calle Francia N° 222, Chivilcoy, Buenos Aires </p>
                 <p>Teléfono 011 15-21687802 </p>
@@ -123,3 +140,5 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
+
+</html>

@@ -11,7 +11,6 @@
     flex-wrap: wrap;
     justify-content: center;
     
-
 }
 
 .galeria img{
@@ -26,6 +25,7 @@
 
 header{
     display: flex;
+    background-color:rgb(243, 246, 246);
 }
 
 nav{
@@ -57,11 +57,44 @@ h1{
 
 div{
     background-color:rgb(242, 242, 240) ;
-    width: 400px;
-    height: 250px;
-    border: solid 5px black;
+    height: 150px;
+    width: 100px;
 }
 
 body{
     background-color: grey;
+}
+
+.carousel{
+    height: 500px;
+    width: 500px;
+}
+
+.carousel-inner{
+    height: 500px;
+    width: 500px;
+}
+
+
+.redessociales{
+    height: 250px;
+    width: 500px;
+    border: solid 5px black;
+}
+
+.contacto{
+    border: solid 5px black;
+}
+
+@media (max-width:325px){
+    .redessociales{ background-color: aquamarine;}
+}
+
+@media (min-width:768px){
+    .redessociales{ background-color: burlywood;}
+}
+
+
+@media (min-width:1200px){
+    .redessociales{ background-color: royalblue;}
 }
