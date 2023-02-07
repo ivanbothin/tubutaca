@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Butaca</title>
+    <!--ICONO-->
     <link rel="shortcut icon" href="../img/Butaca.png" type="image/x-icon">
+    <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CDN BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header style="background-color:rgb(243, 246, 246)">
+    <!--Titulo y nav-->
+
+    <!-- Header-->
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../Index.html">
-                    <img class="logo" src="../img/Butaca.png" alt="">
+                    <img class="logoPrincipal" src="../img/Butaca.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,72 +51,154 @@
         </nav>
     </header>
 
-    <main>
-        <form class="contacto">
-            <fieldset>
-                <legend>Tu Butaca</legend>
-            <li>
-                <input type="text" placeholder="Nombre">
-            </li>
-            <li>
-                <label for="">Apellido</label>
-                <input type="text">
-            </li>
-            <li>
-                <label for="">Password</label>
-                <input type="password">
-            </li>
-            <li>
-                <label for="">Email</label>
-                <input type="email">
-            </li>
-            <li>
-                <label for="id_masculino">Masculino</label>
-                <input type="radio" name="sexo" id="id_masculino" value="m">
-            </li>
-            <li>
-                <label for="id_femenino">Femenino</label>
-                <input type="radio" name="sexo" id="id_femenino" value="f">
-            </li>
-            <li>
-                <label for="id_otro">Otro</label>
-                <input type="radio" name="sexo" id="id_otro" value="o">
-            </li>
-            <li>
-                <textarea name="" id="" cols="30" rows="10">Ingrese a detalle</textarea>
-            </li>
-            <select name="Tipos">
-                <option value="series">Series</option>
-                <option value="peliculas">Peliculas</option>
-                <option value="otros">Otros</option>
-            </select>
-            <li>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar Formulario">
-            </li>
+    <!-- Main-->
+    <main id="mainContacto" class="container-fuid">
+
+        <div class="row  p-2">
+        <section class="col-12 col-lg-7" data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" >
+            <h2 class="text-center p-1" >Contacto</h2>
+            <form >
+            <fieldset >
+                <legend class="fw-semibold fs-5">Dejanos tu mensaje:</legend>
+                <div class="mb-3 fw-semibold fs-5">
+                    <label for="disabledTextInput" class="form-label">Nombre:</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombres">
+                </div>
+                <div class="mb-3 fw-semibold fs-5">
+                    <label for="disabledTextInput" class="form-label">Apellido:</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Apellido">
+                </div>
+                <div class="mb-3 fw-semibold fs-5">
+                    <label for="disabledTextInput" class="form-label">Email:</label>
+                    <input type="email" id="disabledTextInput" class="form-control" placeholder="ejemplo@mail.com">
+                </div>
+                <div class="mb-3 fw-semibold fs-5">
+                    <label for="disabledTextInput" class="form-label">Teléfono:</label>
+                    <input type="telefono" id="disabledTextInput" class="form-control" placeholder="011-xxxxxxxx">
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label fw-semibold fs-5" for="flexCheckDefault">
+                        ¿Querés suscribirte a las noticias del blog?
+                    </label>
+                </div>
+
+                <div class="mb-3 fw-semibold fs-5">
+                    <label for="disabledSelect" class="form-label">Introduzca una opcion:</label>
+                    <select id="disabledSelect" class="form-select" >
+                        <option value="1">Serie</option>
+                        <option value="2">Pelicula</option>
+                        <option value="3">Otro</option>
+                    </select>
+                </div>
+
+                <div class="my-2 d-flex justify-content-around contactoBotones">
+                <button type="submit" class="btn btn-primary fw-semibold fs-5">Enviar mensaje</button>
+                <button type="reset" class="btn btn-primary fw-semibold fs-5">Borrar formulario</button>
+                </div>
             </fieldset>
-        </form>
+                <div class="comentarios fw-semibold fs-5 mt-2 d-flex flex-column">
+                    <p class="m-0 p-1">Comentarios</p>
+                    <textarea name="" id="" cols="45" rows="10" class="align-items-center"></textarea>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="col-12 col-lg-5" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" >
+            <h2 class="text-center p-1"  >Dónde nos encontramos?</h2>
+                    <p class="fw-semibold fs-5 lh-sm"> Nos encontamos en Calle Francia N° 222, Chivilcoy, Buenos Aires </p>
+                    <p class="fw-semibold fs-5 lh-sm">Teléfono 011 15-2168-7802</p>
+
+
+            <!--Seccion Horarios-->
+            <h2  class="p-1 mt-3 text-center">Nuestros horarios</h2>
+            
+            <!-- TABLA DE HORARIOS  -->
+    
+                    <table class=" table text-center fw-semibold fs-5"> 
+                        <h4 class="text-center">ATENCIÓN</h4>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Día</th>
+                                <th scope="col">Mañana</th>
+                                <th scope="col">Tarde</th>
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Lunes</td>
+                                <td>X</td>
+                                <td>15 a 17 hs</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Martes</td>
+                                <td>9.30 a 12.30 hs</td>
+                                <td>16.30 a 18.30 hs</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Miércoles</td>
+                                <td>X</td>
+                                <td>15 a 18 hs</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Jueves</td>
+                                <td>9.30 a 14 hs</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Viernes</td>
+                                <td>X</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Sábado</td>
+                                <td>9.30 a 12.30 hs</td>
+                                <td>9.30 a 13 a 17 hs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+        </section>
+    </div>
     </main>
     
 
+    <!-- Footer-->
     <footer>
-        <section>
-            <div class="redessociales">
-                <h4>CONTACTO</h4>
+        <section ID="cajaFooter">
+            <div class="footerContacto fw-semibold fs-5">
+                <h4 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="mt-2 text-center p-1">CONTACTO</h4>
                 <p> Calle Francia N° 222, Chivilcoy, Buenos Aires </p>
-                <p>Teléfono 011 15-21687802 </p>
-                <a>
-                <i class="fa-brands fa-whatsapp fa-5x"></i>
+                <p>Teléfono 011 15-2168-7802 </p>
+                <p class="parrafoWhatsapp"><a href="https://wa.me/541121687802" class="logoWhatsapp  fw-bold" target="blank">Contactanos!<img src="../img/iconoWhatsapp1.png" alt="Ícono de Whatsapp" ></p>
                 </a>
-                <a>
-                <i class="fa-brands fa-instagram fa-5x"></i>
+                <a href="https://www.instagram.com/" target="blank"><img src="../img/iconoInstragram.png" alt="Ícono de Instagram" class="logoInstagram">
                 </a>
-                <a>
-                <i class="fa-brands fa-facebook fa-5x"></i>
+                <a href="https://www.facebook.com/" target="blank"><img src="../img/iconoFacebook.png" alt="Ícono de Facebook" class="logoFacebook">
                 </a>
             </div>
         </section>
     </footer>
+
+    <!--link animaciones-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!--CDN BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -117,6 +206,3 @@
     crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-

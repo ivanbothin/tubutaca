@@ -1,100 +1,254 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins' , sans-serif;
-    box-sizing: border-box;
+@charset "UTF-8";
+/*--Colores--*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.galeria{
-    background-color: rgb(237, 237, 133);
+h1 {
+  font-family: "Libre Baskerville", serif;
+}
+
+nav a:hover {
+  background-color: #fcddb5;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: #fcddb5;
+}
+a:active {
+  background-color: rgb(46, 131, 88);
+  color: rgb(66, 64, 64);
+}
+
+.tblanco {
+  color: white;
+}
+
+body {
+  background-color: rgb(231, 219, 235);
+}
+
+main {
+  line-height: 1, 5;
+  padding: 0;
+}
+main p {
+  text-align: justify;
+  line-height: 1, 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(66, 64, 64);
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+P::-moz-selection {
+  color: rgb(66, 64, 64);
+  background-color: #fcddb5;
+}
+
+P::selection {
+  color: rgb(66, 64, 64);
+  background-color: #fcddb5;
+}
+
+/*--Base flexbox--*/
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button, .btn {
+  border: rgb(111, 0, 255) solid 2px;
+}
+.button:hover, .btn:hover {
+  background-color: rgb(240, 167, 79);
+  color: white;
+}
+
+.btn {
+  background-color: rgb(46, 131, 88);
+  justify-content: space-around;
+}
+
+footer {
+  background-color: rgb(56, 56, 54);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 0.5rem;
+  background-image: linear-gradient(rgb(37, 37, 37), rgb(87, 87, 86));
+}
+
+#cajaFooter {
+  margin-right: 14vw;
+  margin-left: 10vw;
+  position: relative;
+  margin-bottom: 1px;
+}
+#cajaFooter a {
+  bottom: 5vw;
+  right: 3vw;
+}
+#cajaFooter p {
+  line-height: 1.4rem;
+}
+#cajaFooter ul {
+  line-height: 1.5rem;
+}
+
+.logoWhatsapp {
+  position: fixed;
+  bottom: 1vw;
+  right: 3vw;
+}
+
+/*---APLICANDO GRIDS---*/
+#cajaFooter {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 100%;
+  grid-template-areas: "contacto servicios mapa ";
+  grid-auto-flow: row;
+  gap: 10px 10px;
+  padding: 10px;
+}
+
+#cajaFooter iframe {
+  height: 180px;
+}
+
+.footerContacto {
+  grid-area: contacto;
+}
+
+.footerServicios {
+  grid-area: servicios;
+}
+
+.footerMapa {
+  grid-area: mapa;
+}
+
+#cajaFooter a:hover {
+  background: #f0dfc6;
+  color: rgb(46, 131, 88);
+  border-color: rgb(66, 64, 64);
+  border-radius: 0.2rem;
+  transform: scale(1.2, 1.2);
+  display: inline-block;
+}
+
+.parrafoWhatsapp a {
+  color: black;
+  background-color: rgb(231, 219, 235);
+  opacity: 90%;
+  font-weight: 200;
+  border-radius: 10px;
+  border-width: 1px;
+  font-size: larger;
+  padding: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  #cajaFooter {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
-    
+  }
+}
+/*-- Mixin y condicional--*/
+@media screen and (max-width: 991px) {
+  .logoPrincipal {
+    width: 120px;
+    height: 100%;
+    border-radius: 0.5rem;
+    padding: 6px;
+  }
+  .logoSecciones {
+    width: 120px;
+    height: 100%;
+    border-radius: 0.5rem;
+    padding: 6px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logoPrincipal {
+    width: 140px;
+    height: 100%;
+    border-radius: 0.5rem;
+    padding: 6px;
+  }
+  .logoSecciones {
+    width: 140px;
+    height: 100%;
+    border-radius: 0.5rem;
+    padding: 6px;
+  }
+}
+h1 {
+  color: rgb(231, 219, 235);
+  background-color: rgb(66, 64, 64);
+  text-align: center¿;
+  z-index: -2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.galeria img{
-    width: 30%;
-    padding: 5px;
-    border: solid 2px black;
+h2 {
+  color: rgb(231, 219, 235);
+  background-color: rgb(66, 64, 64);
+  text-align: center¿;
+  z-index: -2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.text-center{
-    text-align: center;
+h3 {
+  color: rgb(231, 219, 235);
+  background-color: rgb(66, 64, 64);
+  text-align: center¿;
+  z-index: -2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-header{
-    display: flex;
-    background-color:rgb(243, 246, 246);
+h4 {
+  color: rgb(231, 219, 235);
+  background-color: rgb(66, 64, 64);
+  text-align: center¿;
+  z-index: -2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-nav{
-    display: flex;
-    justify-content: flex-end;
-    width: 70%;
+h5 {
+  color: rgb(231, 219, 235);
+  background-color: rgb(66, 64, 64);
+  text-align: center¿;
+  z-index: -2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.logo{
-    width: 25%; 
-    height: 25%;
+h6 {
+  color: rgb(231, 219, 235);
+  background-color: rgb(66, 64, 64);
+  text-align: center¿;
+  z-index: -2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.navegacion{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
+li {
+  color: rgb(231, 219, 235);
+  background-color: rgb(66, 64, 64);
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.navegacion li a{
-    text-decoration: none;
-}
-
-h1{
-    text-align: center;
-}
-
-div{
-    background-color:rgb(242, 242, 240) ;
-    height: 150px;
-    width: 100px;
-}
-
-body{
-    background-color: grey;
-}
-
-.carousel{
-    height: 500px;
-    width: 500px;
-}
-
-.carousel-inner{
-    height: 500px;
-    width: 500px;
-}
-
-
-.redessociales{
-    height: 250px;
-    width: 500px;
-    border: solid 5px black;
-}
-
-.contacto{
-    border: solid 5px black;
-}
-
-@media (max-width:325px){
-    .redessociales{ background-color: aquamarine;}
-}
-
-@media (min-width:768px){
-    .redessociales{ background-color: burlywood;}
-}
-
-
-@media (min-width:1200px){
-    .redessociales{ background-color: royalblue;}
-}
+/*--Main de Sección Inicio--*/
+.nav-item {
+  background-color: rgb(251, 247, 252);
+}/*# sourceMappingURL=main.css.map */
