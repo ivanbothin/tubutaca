@@ -1,0 +1,10 @@
+/*--Contacto en Sección Inicio--*/
+    .indexContacto {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    .indexContacto > h2 {
+    z-index: 0;
+    }

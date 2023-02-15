@@ -11,10 +11,6 @@ a {
     &:visited{ 
         color:$color-secundario; 
     }
-    &:active{ 
-        background-color: $color-terciario; 
-        color: $color-grisoscuro; 
-    }
 }   
 
 .tblanco{

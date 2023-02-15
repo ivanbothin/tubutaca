@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="cine, series, peliculas">
+    <meta name="keywords" content="cine, series, peliculas, nacional, internacional">
     <meta name="description" content="galeria de peliculas y series">
     <title>Tu Butaca</title>
     <!--ICONO-->
@@ -60,49 +60,76 @@
         </nav>
     </header>
 
-    <!-- Main-->
+    <!-- Main Galeria-->
     <main>
         <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="mt-2 text-center p-1">Galeria de Estrenos</h1>
         <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="mt-2 text-center p-1">Series y Peliculas</h3>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/Stranger.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/Merlina.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/1899.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/Narcos.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/Dahmer.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/The_Sinner.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/Glass.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/Matrimillas.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/El angel.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>  
+        <span class="linea"></span>
+        <section class="galeria">
+            <a href="#image1"><img src="../img/Dahmer.jpg" alt=""></a>
+            <a href="#image2"><img src="../img/1899.jpg" alt=""></a>
+            <a href="#image3"><img src="../img/El angel.jpg" alt=""></a>
+            <a href="#image4"><img src="../img/Glass.jpg" alt=""></a>
+            <a href="#image5"><img src="../img/Merlina.jpg" alt=""></a>
+            <a href="#image6"><img src="../img/Matrimillas.jpg" alt=""></a>
+            <a href="#image7"><img src="../img/Narcos.jpg" alt=""></a>
+            <a href="#image8"><img src="../img/Stranger.jpg" alt=""></a>
+        </section>
+        <article class="light-box" id="image1">
+            <a href="#image8" class="next">←</a>
+            <img src="../img/Dahmer.jpg" alt="">
+            <a href="#image2" class="next">→</a>
+            <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image2">
+            <a href="#image1" class="next">←</a>
+            <img src="../img/1899.jpg" alt="">
+            <a href="#image3" class="next">→</a>
+            <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image3">
+            <a href="#image2" class="next">←</a>
+            <img src="../img/El angel.jpg" alt="">
+            <a href="#image4" class="next">→</a>
+            <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image4">
+            <a href="#image3" class="next">←</a>
+            <img src="../img/Glass.jpg" alt="">
+            <a href="#image5" class="next">→</a>
+            <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image5">
+            <a href="#image4" class="next">←</a>
+            <img src="../img/Merlina.jpg" alt="">
+            <a href="#image6" class="next">→</a>
+            <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image6">
+            <a href="#image5" class="next">←</a>
+            <img src="../img/Matrimillas.jpg" alt="">
+            <a href="#image7" class="next">→</a>
+            <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image7">
+            <a href="#image6" class="next">←</a>
+            <img src="../img/Narcos.jpg" alt="">
+            <a href="#image8" class="next">→</a>
+            <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image8">
+            <a href="#image7" class="next">←</a>
+            <img src="../img/Stranger.jpg" alt="">
+            <a href="#image1" class="next">→</a>
+            <a href="#" class="close">X</a>
+        </article>
         
     </main>
 

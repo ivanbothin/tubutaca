@@ -1,0 +1,16 @@
+/*--Imagenes en Estrenos--*/
+.estrenos{
+    text-align: center;
+}
+  
+.estrenos img{
+    width: 400px;
+    height: 400px;
+}
+  
+@media screen and (max-width: 420px) {
+    .estrenos img{
+    width: 250px;
+    height: 250px;
+    }
+}
